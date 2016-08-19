@@ -34,7 +34,8 @@ module Spaceship
       # @return (Boolean) Content Rights - Contains third party content
       attr_accessor :content_rights_contains_third_party_content
 
-      # @return (Boolean) Content Rights - Has rights of content
+      # @return (Boolean) Content Rights - Has rights of content.
+      # Usage note: iTunesConnect will return an error if this is set to false, even if content_rights_contains_third_party_content is set to false.
       attr_accessor :content_rights_has_rights
 
       # @return (Boolean) Export Compliance - Available on French Store
